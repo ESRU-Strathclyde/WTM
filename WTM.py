@@ -164,7 +164,7 @@ def replace_text_in_file(input_filename, output_filename, tag, replacement_strin
         with open(output_filename, 'w') as outfile:
             outfile.write(modified_content)
         
-        print(f"Successfully replaced '{tag}' with '{replacement_string}' in '{input_filename}' and saved to '{output_filename}'.")
+        print(f"Script created: '{output_filename}'.")
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -391,5 +391,4 @@ if existing_files:
     replace_text_in_file("WTM_station_template.py", "WTM_" + station_name + "_ann.py", "<STATIONNAME>", station_name)
     # create the py script that modifies epw files using the ann
     replace_text_in_file("WTM_epw_template.py", "WTM_epw_" + station_name + ".py", "<ANNFILE>", "WTM_" + station_name + "_ann.py")
-    replace_text_in_file("WTM_epw_" + station_name + ".py", "WTM_epw_" + station_name + ".py", "<station_x>", sys.argv[2])
-    replace_text_in_file("WTM_epw_" + station_name + ".py", "WTM_epw_" + station_name + ".py", "<station_y>", sys.argv[3])
+    
