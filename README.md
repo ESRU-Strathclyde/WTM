@@ -4,4 +4,4 @@ It modifies data collected in remote areas in weather stations to account for th
 
 WTM uses CFD data pre-calculated using the software [WindStation](https://en.wikipedia.org/wiki/WindStation) and applies machine learning techniques to modify weather data entries in climate files.
 
-Check the [documentation](https://appdocs.esru.strath.ac.uk/books/introduction-to-wtm) page for further information . 
+Check the [documentation](https://appdocs.esru.strath.ac.uk/books/introduction-to-wtm) or http://130.159.19.70/ page for further information . 
